@@ -23,6 +23,50 @@ $ make config-gcc
 $ make
 $ sudo make install
 
+2. Iverilog
+
+Steps to install iverilog
+sudo apt-get update
+sudo apt-get install iverilog 
+
+3. gtkwave
+
+Steps to install gtkwave
+sudo apt-get update
+sudo apt install gtkwave 
+
+4. ngspice
+
+After downloading the tarball from https://sourceforge.net/projects/ngspice/files/ to a local
+directory, unpack it using:
+
+$ tar -zxvf ngspice-37.tar.gz
+$ cd ngspice-37
+$ mkdir release
+$ cd release
+$ ../configure --with-x --with-readline=yes --disable-debug
+$ make
+$ sudo make install 
+
+5. magic
+$ sudo apt-get install m4
+$ sudo apt-get install tcsh
+$ sudo apt-get install csh
+$ sudo apt-get install libx11-dev
+$ sudo apt-get install tcl-dev tk-dev
+$ sudo apt-get install libcairo2-dev
+$ sudo apt-get install mesa-common-dev libglu1-mesa-dev
+$ sudo apt-get install libncurses-dev
+git clone https://github.com/RTimothyEdwards/magic
+cd magic
+./configure
+make
+make install 
+
+
+
+
+
 
 
 
